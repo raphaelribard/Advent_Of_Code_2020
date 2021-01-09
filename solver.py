@@ -3,8 +3,7 @@ This module provides a Solver class which can load the data located in the Data 
 This Solver class will be able to solve the daily puzzles using class methods.
 """
 
-from copy import deepcopy
-import numpy as np
+from daily_puzzles_solvers.day_1 import day_1_puzzle_solve
 
 class Solver():
     """

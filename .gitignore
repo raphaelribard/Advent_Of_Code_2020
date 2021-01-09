@@ -2,3 +2,5 @@
 .vscode/
 
 AdventCalendar.ipynb
+
+*.pyc
