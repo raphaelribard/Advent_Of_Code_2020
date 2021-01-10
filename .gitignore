@@ -4,3 +4,5 @@
 AdventCalendar.ipynb
 
 *.pyc
+
+advent_of_code.egg-info/
