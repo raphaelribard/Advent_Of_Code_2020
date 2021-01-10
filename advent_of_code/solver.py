@@ -39,7 +39,7 @@ class Solver():
                 print(f"No file for day {day}: {exception}")
         self.data = data_dict
         self.available_days = set(available_days)
-    
+
     def solve_day_1(self):
         """
         solve_day_1:    This function appends the day 1 result
@@ -47,7 +47,7 @@ class Solver():
         """
         part_1_result = day_1_puzzle_solve(self.data['Day_1_part_1'])
         self.solutions['day_1_part_1'] = part_1_result
-    
+
 
 test = Solver()
 test.load_data()
