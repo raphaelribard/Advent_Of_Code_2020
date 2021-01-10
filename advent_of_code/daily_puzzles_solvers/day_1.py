@@ -1,3 +1,6 @@
+"""
+This module solves the day 1 puzzles.
+"""
 import numpy as np
 
 def day_1_puzzle_solve(day_1_data):
