@@ -4,6 +4,7 @@ This Solver class will be able to solve the daily puzzles using class methods.
 """
 
 from advent_of_code.daily_puzzles_solvers.day_1 import day_1_puzzle_solve
+from advent_of_code.daily_puzzles_solvers.day_24 import day_24_puzzle_solve
 
 class Solver():
     """
@@ -47,11 +48,20 @@ class Solver():
         """
         part_1_result = day_1_puzzle_solve(self.data['Day_1_part_1'])
         self.solutions['day_1_part_1'] = part_1_result
+    
+    def solve_day_24(self):
+        """
+        solve_day_24:   This function appends the day 24 result
+                        to the solutions class attribute (dictionary)
+        """
+        part_1_result = day_24_puzzle_solve(self.data['Day_24_part_1'])
+        self.solutions['day_24_part_1'] = part_1_result
 
 
 test = Solver()
 test.load_data()
 test.solve_day_1()
+test.solve_day_24()
 print(test)
 print(test.solutions)
 # print(test.data['Day_1_part_1'])
