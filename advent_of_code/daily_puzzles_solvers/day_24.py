@@ -15,7 +15,7 @@ def day_24_puzzle_solve(day_24_data):
 
     Returns
     -------
-    result:         Integer - The answer to the puzzle
+    result:         Dictionqry - The answers to the puzzle
     """
     day_24_data = day_24_data.split('\n')
     result = get_black_tiles(day_24_data)
@@ -49,7 +49,6 @@ def get_tile_to_flip_coordinates(tile_moves):
       elif tile_moves[cursor + 1] == 'e':
         tile[1]+=1
         cursor+=2
-    # print(tile)
   return tile
 
 def get_tiles(read_data):
