@@ -54,8 +54,10 @@ class Solver():
         solve_day_24:   This function appends the day 24 result
                         to the solutions class attribute (dictionary)
         """
-        part_1_result = day_24_puzzle_solve(self.data['Day_24_part_1'])
-        self.solutions['day_24_part_1'] = part_1_result
+        day_24_solutions = day_24_puzzle_solve(self.data['Day_24_part_1'])
+        self.solutions['day_24_part_1'] = day_24_solutions['Part 1']
+        self.solutions['day_24_part_2'] = day_24_solutions['Part 2']
+
 
 
 test = Solver()
