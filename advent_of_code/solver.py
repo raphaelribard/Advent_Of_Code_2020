@@ -5,6 +5,7 @@ This Solver class will be able to solve the daily puzzles using class methods.
 
 from advent_of_code.daily_puzzles_solvers.day_1 import day_1_puzzle_solve
 from advent_of_code.daily_puzzles_solvers.day_24 import day_24_puzzle_solve
+from advent_of_code.daily_puzzles_solvers.day_25 import day_25_puzzle_solve
 
 class Solver():
     """
@@ -29,7 +30,7 @@ class Solver():
         """
         data_dict = {}
         available_days = []
-        for day in range(1, 25):
+        for day in range(1, 26):
             try:
                 for part in range(1, 3):
                     with open(f'{self.data_path}Day_{day}_part_{part}.txt') as local_file:
@@ -48,7 +49,7 @@ class Solver():
         """
         part_1_result = day_1_puzzle_solve(self.data['Day_1_part_1'])
         self.solutions['day_1_part_1'] = part_1_result
-    
+
     def solve_day_24(self):
         """
         solve_day_24:   This function appends the day 24 result
@@ -58,12 +59,22 @@ class Solver():
         self.solutions['day_24_part_1'] = day_24_solutions['Part 1']
         self.solutions['day_24_part_2'] = day_24_solutions['Part 2']
 
+    def solve_day_25(self):
+        """
+        solve_day_25:   This function appends the day 25 result
+                        to the solutions class attribute (dictionary)
+        """
+        day_25_solutions = day_25_puzzle_solve(self.data['Day_25_part_1'])
+        self.solutions['day_25_part_1'] = day_25_solutions['Part 1']
+        # self.solutions['day_24_part_2'] = day_24_solutions['Part 2']
+
 
 
 test = Solver()
 test.load_data()
 test.solve_day_1()
-test.solve_day_24()
+# test.solve_day_24()
+test.solve_day_25()
 print(test)
 print(test.solutions)
 # print(test.data['Day_1_part_1'])
