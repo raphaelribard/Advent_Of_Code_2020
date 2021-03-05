@@ -11,4 +11,5 @@ def test_day_24_puzzle_solve():
         read_data = local_file.read()
     example_result = day_24_puzzle_solve(read_data)
     print(example_result)
-    assert example_result == 10
+    assert example_result['Part 1'] == 10
+    assert example_result['Part 2'] == 2208
